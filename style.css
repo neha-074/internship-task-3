@@ -271,10 +271,18 @@ footer{
         gap:15px;
     }
 
+    .logo{
+        font-size:1.5rem;
+    }
+ 
     .nav-links{
         flex-wrap:wrap;
         justify-content:center;
-    }
+        gap:12px;
+        width:100%;
+        margin-top:10px;
+   }
+    
 
     .hero h1{
         font-size:2.5rem;
