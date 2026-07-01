@@ -265,10 +265,14 @@ footer{
 /* Responsive */
 
 @media(max-width:768px){
-
+    header{
+        position: static;
+    }
     .navbar{
-        flex-direction:column;
-        gap:15px;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
     }
 
     .logo{
@@ -276,13 +280,15 @@ footer{
     }
  
     .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:12px;
         width:100%;
-        margin-top:10px;
-   }
-    
+        justify-content:center;
+        gap:15px;
+        margin-top:12px;
+    }
+    .hero{
+        padding-top:20px;
+
+    }
 
     .hero h1{
         font-size:2.5rem;
