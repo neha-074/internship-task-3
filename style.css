@@ -264,30 +264,41 @@ footer{
 
 /* Responsive */
 
-@media(max-width:768px){
+@media (max-width:768px){
+
     header{
-        position: static;
+        position:static;
     }
+
     .navbar{
-        flex-direction:row;
-        justify-content:space-between;
+        display:grid;
+        grid-template-columns:1fr auto;
         align-items:center;
-        flex-wrap:wrap;
+        gap:10px;
     }
 
     .logo{
+        grid-column:1;
         font-size:1.5rem;
     }
- 
-    .nav-links{
-        width:100%;
-        justify-content:center;
-        gap:15px;
-        margin-top:12px;
+
+    .theme-btn{
+        grid-column:2;
+        justify-self:end;
     }
+
+    .nav-links{
+        grid-column:1 / 3;
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:12px;
+        margin-top:10px;
+        width:100%;
+    }
+
     .hero{
         padding-top:20px;
-
     }
 
     .hero h1{
